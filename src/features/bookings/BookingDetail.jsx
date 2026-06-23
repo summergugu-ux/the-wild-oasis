@@ -68,12 +68,12 @@ function BookingDetail() {
         )}
 
         <Modal>
-          <Modal.Toggle opens="delete">
+          <Modal.Open opens="delete">
             <Button variation="danger">Delete booking</Button>
-          </Modal.Toggle>
+          </Modal.Open>
           <Modal.Window name="delete">
             <ConfirmDelete
-              resource="booking"
+              resourceName="booking"
               // These options will be passed wherever the function gets called, and they determine what happens next
               disabled={isDeleting}
               onConfirm={() =>
